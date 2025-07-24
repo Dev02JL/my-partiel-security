@@ -7,6 +7,6 @@
 <h3>Messages :</h3>
 <ul>
   <% messages.forEach(function(msg) { %>
-    <li><%= msg %></li>
+    <li><%- msg.replace(/</g, '&lt;').replace(/>/g, '&gt;') %></li>
   <% }) %>
 </ul>
